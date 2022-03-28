@@ -1,0 +1,8 @@
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+$bgBlack: #202020;
+$colorOrange: #ef8b54;
+$colorWhite: #ffffff;

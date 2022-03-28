@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  background: #202020;
+}
+
+.container {
+  max-width: 87.5rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.625rem;
+}
+
+@media (max-width: 37.5rem) {
+  .container .nav {
+    height: 3.125rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .container .nav__logo {
+    display: none;
+  }
+}
+
+.container .nav__logo_mobile {
+  display: none;
+}
+
+@media (max-width: 37.5rem) {
+  .container .nav__logo_mobile {
+    display: block;
+  }
+}
+
+.container .nav__callOrder .nav__button {
+  padding: 0.8125rem 1.625rem;
+  color: #ff834e;
+  border: 1px solid #ff834e;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-right: 1.875rem;
+}
+
+.container .nav__callOrder .nav__number {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+@media (max-width: 30.625rem) {
+  .container .nav__callOrder {
+    display: none;
+  }
+}
+
+.container .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  gap: 1.875rem;
+}
+
+@media (max-width: 71.875rem) {
+  .container .nav__menu {
+    display: none;
+  }
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 71.875rem) {
+  .menu-burger {
+    display: block;
+    position: relative;
+    width: 1.875rem;
+    height: 1.125rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.menu-burger span, .menu-burger::before, .menu-burger::after {
+  left: 0;
+  position: absolute;
+  height: 0.1875rem;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #ef8b54;
+  z-index: 1;
+}
+
+.menu-burger::before, .menu-burger::after {
+  content: "";
+}
+
+.menu-burger::before {
+  top: 0;
+}
+
+.menu-burger::after {
+  bottom: 0;
+}
+
+.menu-burger span {
+  top: 50%;
+  -webkit-transform: scale(1) translate(0px, -50%);
+      -ms-transform: scale(1) translate(0px, -50%);
+          transform: scale(1) translate(0px, -50%);
+}
+
+.menu-burger .menu-burger-circle {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #5a5959;
+  border-radius: 50%;
+}
+
+._close span {
+  background: #ddd;
+  -webkit-transform: scale(0) translate(0px, -50%);
+      -ms-transform: scale(0) translate(0px, -50%);
+          transform: scale(0) translate(0px, -50%);
+}
+
+._close::before {
+  background: #ddd;
+  top: 50%;
+  -webkit-transform: rotate(-45deg) translate(0px, -50%);
+      -ms-transform: rotate(-45deg) translate(0px, -50%);
+          transform: rotate(-45deg) translate(0px, -50%);
+}
+
+._close::after {
+  background: #ddd;
+  top: 45%;
+  -webkit-transform: rotate(45deg) translate(0px, 50%);
+      -ms-transform: rotate(45deg) translate(0px, 50%);
+          transform: rotate(45deg) translate(0px, 50%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
