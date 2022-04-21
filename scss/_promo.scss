@@ -1,0 +1,15 @@
+.promo {
+  background-image: url('../img/promo-bg.jpg');
+  padding: 100px 0;
+  height: 1060px;
+  .container {
+      max-width: 1430px;
+      padding: 0 15px;
+      margin: 0 auto;
+
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
