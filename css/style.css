@@ -108,10 +108,10 @@
   content: "";
 }
 .menu-burger::before {
-  top: 1.5px;
+  top: 2px;
 }
 .menu-burger::after {
-  bottom: 3.5px;
+  bottom: 4px;
 }
 .menu-burger span {
   top: 45%;
@@ -129,16 +129,16 @@
 }
 
 ._close span {
-  background: #ddd;
+  background: #ffffff;
   transform: scale(0) translate(0px, -50%);
 }
 ._close::before {
-  background: #ddd;
+  background: #ffffff;
   top: 50%;
   transform: rotate(-45deg) translate(0px, -50%);
 }
 ._close::after {
-  background: #ddd;
+  background: #ffffff;
   top: 45%;
   transform: rotate(45deg) translate(0px, 50%);
 }

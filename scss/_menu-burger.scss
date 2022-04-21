@@ -30,11 +30,11 @@
   }
 
   &::before {
-    top: 1.5px;
+    top: 2px;
   }
 
   &::after {
-    bottom: 3.5px;
+    bottom: 4px;
   }
 
   span {
@@ -55,19 +55,18 @@
 
 ._close {
   span {
-
-    background: #ddd;
+    background: $colorWhite;
     transform: scale(0) translate(0px, -50%);
   }
 
   &::before {
-    background: #ddd;
+    background: $colorWhite;
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
   }
 
   &::after {
-    background: #ddd;
+    background: $colorWhite;
     top: 45%;
     transform: rotate(45deg) translate(0px, 50%);
   }
