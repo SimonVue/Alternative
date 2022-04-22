@@ -12,4 +12,39 @@
     display: flex;
     justify-content: space-between;
   }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 23px;
+    color: #FF834E;
+    font-weight: 700;
+    margin: 0 0 44px 31px;
+    &::before {
+      position: absolute;
+      content: '';
+      left: -31px;
+      top: 4px;
+      width: 19px;
+      height: 19px;
+      background-image: url('../img/cart.png');
+    }
+  }
+  &__title {
+    width: 824px;
+    font-size: 52px;
+    line-height: 69px;
+    font-weight: 700;
+    margin-bottom: 44px;
+  }
+
+
+  &__img {
+    width: 595px;
+    height: 768px;
+  }
 }

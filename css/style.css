@@ -1,3 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 .header {
   background: #202020;
 }
@@ -158,90 +242,6 @@
   transform: rotate(45deg) translate(0px, 50%);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  color: #ffffff;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  line-height: 1;
-  font-size: 14px;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
 .promo {
   background-image: url("../img/promo-bg.jpg");
   padding: 100px 0;
@@ -256,9 +256,41 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo__link {
+  position: relative;
+  font-size: 23px;
+  color: #FF834E;
+  font-weight: 700;
+  margin: 0 0 44px 31px;
+}
+.promo__link::before {
+  position: absolute;
+  content: "";
+  left: -31px;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/cart.png");
+}
+.promo__title {
+  width: 824px;
+  font-size: 52px;
+  line-height: 69px;
+  font-weight: 700;
+  margin-bottom: 44px;
+}
+.promo__img {
+  width: 595px;
+  height: 768px;
+}
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
