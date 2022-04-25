@@ -245,7 +245,6 @@ h6 {
 .promo {
   background-image: url("../img/promo-bg.jpg");
   padding: 100px 0;
-  height: 1060px;
 }
 .promo .container {
   max-width: 1420px;
@@ -266,7 +265,7 @@ h6 {
   font-size: 23px;
   color: #FF834E;
   font-weight: 700;
-  margin: 0 0 44px 31px;
+  margin-left: 31px;
 }
 .promo__link::before {
   position: absolute;
@@ -282,7 +281,45 @@ h6 {
   font-size: 52px;
   line-height: 69px;
   font-weight: 700;
-  margin-bottom: 44px;
+  margin: 44px 0;
+}
+.promo__subtitle {
+  font-size: 20px;
+}
+.promo__sup-button {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.promo__button {
+  position: relative;
+  display: block;
+  align-items: center;
+  width: 329px;
+  height: 65px;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 21px 164px 21px 20px;
+  background: #ff834e;
+  margin-bottom: 58px;
+  cursor: pointer;
+}
+.promo__button::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 62px;
+  height: 65px;
+  background-color: #DE774B;
+}
+.promo__button .arrow {
+  position: absolute;
+  top: 38%;
+  right: 23px;
+  width: 17px;
+  color: #fff;
+  z-index: 1;
 }
 .promo__img {
   width: 595px;
